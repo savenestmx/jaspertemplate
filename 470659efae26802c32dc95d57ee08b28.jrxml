@@ -614,6 +614,10 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="data.timePeriod.start"/>
 		<fieldDescription><![CDATA[timePeriod.start]]></fieldDescription>
 	</field>
+	<field name="reportingYear" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.timePeriod.reportingYear"/>
+		<fieldDescription><![CDATA[timePeriod.reportingYear]]></fieldDescription>
+	</field>
 	<field name="end" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.timePeriod.end"/>
 		<fieldDescription><![CDATA[timePeriod.end]]></fieldDescription>
@@ -1931,7 +1935,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
 							<font isBold="true"/>
 							<paragraph leftIndent="5"/>
 						</textElement>
-						<text><![CDATA[timePeriod.start]]></text>
+						<textFieldExpression><![CDATA[$F{reportingYear}]]></textFieldExpression>
 					</staticText>
 					<textField>
 						<reportElement x="270" y="30" width="100" height="30" uuid="84cd51ec-caae-433c-9b58-5b4c5b7bf1ca"/>
